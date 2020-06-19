@@ -11,36 +11,21 @@ Usage ps3005d_powersupply [options...]
 
 | parameter | description
 | ------------ | ------------------|
-| -t timeout      | socket response timeout
-| ------------ | ------------------|
-| -b baudrate     | 9600|19200 (default=19200)
-| ------------ | ------------------|
-| -d device       | tty device file (default: /dev/ttyACM0)
- | ------------ | ------------------|
+| -t <timeout>      | socket response timeout in seconds
+| -b <baudrate>     | 9600|19200 (default=19200)
+| -d <device>       | tty device file (default: /dev/ttyACM0 on Linux, /dev/cu.usbserial on Mac OSX)
  | -q              | query status
-| ------------ | ------------------|
-| -u voltage      | set or get voltage (0.0..30.0)
-| ------------ | ------------------|
-| -i current      | set or get current (0.0..5.0)
-| ------------ | ------------------|
-| -x 0|1          | turn on/off overvoltage protection
-| ------------ | ------------------|
-| -y 0|1          | turn on/off overcurrent protection
-| ------------ | ------------------|
+| -u <voltage>      | set or get voltage (0.0..30.0)
+| -i <current>      | set or get current (0.0..5.0)
+| -x 0|1          | turn on (1)/off (0) overvoltage protection
+| -y 0|1          | turn on (1)/off (0) overcurrent protection
 | -U              | get output voltage
-| ------------ | ------------------|
 | -I              | get output current
-| ------------ | ------------------|
 | -V              | get device information
-| ------------ | ------------------|
 | -v              | turn on verbosity
-| ------------ | ------------------|
-| -o 0|1          | turn on/off output
-| ------------ | ------------------|
+| -o 0|1          | turn on (1)/off (0) output
 | -r bank         | recall memory
-| ------------ | ------------------|
 | -s bank         | save memory
-| ------------ | ------------------|
 | -m mode        | set tracking mode (0=independent, 1=series, 2=parallel)
 
 ## Platforms
