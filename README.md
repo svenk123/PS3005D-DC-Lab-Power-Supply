@@ -3,6 +3,8 @@ This is a command line tool to control a PS3005D compabtile bench top lab power 
 
 These programmable power supplies have the following specifications
 
+| Feature | Description |
+|-----|--------|
 | Channels | 1
 | Voltage range | 0..30 V
 | Current range | 0..5 A
@@ -19,7 +21,6 @@ and compatible devices (not tested):
 * Korad KA3005P
 * RND [320-KA3005P](https://www.distrelec.de/en/bench-top-power-supply-30-programmable-rnd-lab-rnd-320-ka3005p/p/30061864)
 * Tenma [72-2540](http://uk.farnell.com/tenma/72-2540/power-supply-1ch-30v-5a-prog/dp/2445412)
-* 
 
 ## Usage
 
